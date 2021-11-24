@@ -1,5 +1,12 @@
 # Load Testing application
-A simple app to test the load for https://www.bbc.com with H2O wave framework and Locust. 
+A simple app to test the load for https://www.bbc.com with H2O wave framework and Locust.
+#### H2O wave
+<img src="https://www.h2o.ai/wp-content/uploads/2020/12/wave-type-yellow-1024x410.png" width="300">
+H2O Wave is a software stack for building beautiful, low-latency, realtime, browser-based applications and dashboards entirely in Python without using HTML, Javascript, or CSS
+
+#### Locust
+<img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/locust.jpeg" width="300">
+Locust is an open source, easy to use, scriptable and scalable performance testing tool.
 
 ### Quick start
 #### Pre requesists : 
@@ -46,6 +53,38 @@ wave run src/test_app.py
 6. Go to http://localhost:10101/app to access the application.
 
 ### User Manual to the application
-- Home page of the application as follows. You can press Start button to proceed to the load testing.
-![alt text](https://github.com/bhanukad610/Sinhala-Song-Lyrics-Search-Engine/blob/master/Flask_app/IR%20-%20Rules.png?raw=true)
-- 
+#### Home page of the application as follows. You can press Start button to proceed to the load testing.
+<img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/home.png" width="600">
+
+#### Then you will get the below page asking inputs.
+1. Number of uses : number of uses you need Locust to simulate
+2. Spawn rate :  speed at which users are created in the beginning until the specified number of concurrent users are created
+3. Host : host to load test(it will be filled as 'https://www.bbc.com' for you)
+<img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/start%20new%20load%20test.png" width="600">
+
+#### Then you proceed to the Locust dashboard. It has following tabs.
+1. Statistics
+- This shows real-time statistics on how the server responds to the requests sent by Locust. For this 3 endpoints have been used and defined in the src/locust.py.
+<img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/statistics.png" width="600">
+
+2. Charts
+- This shows the charts about total requests per second, response time and the number of users with time.
+<img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/charts_1.png" width="600">
+
+<img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/charts_2.png" width="600">
+
+3. Failiures
+- If any request got failed due to a connection error, timeout, page not found, bad request or similar reason, it will be displayed in this tab.
+<img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/failiures.png" width="600">
+
+4. Exceptions
+- If the code generates Exceptions, it is recorded in the Exceptions tab during execution.
+<img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/Exeptions.png" width="600">
+
+5. Tasks
+- Displays the tasks defined in the locustfile.
+<img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/tasks.png" width="600">
+
+5. Download Data
+- After finishing the test, we can download the data of statistics, failires and exceptions as csv files. And a report which displayed in the web interface.
+<img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/downloads.png" width="600">
