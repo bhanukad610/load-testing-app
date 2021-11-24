@@ -2,13 +2,13 @@
 A simple app to test the load for https://www.bbc.com with H2O wave framework and Locust.
 #### H2O wave
 <img src="https://www.h2o.ai/wp-content/uploads/2020/12/wave-type-yellow-1024x410.png" width="300">
-H2O Wave is a software stack for building beautiful, low-latency, realtime, browser-based applications and dashboards entirely in Python without using HTML, Javascript, or CSS
+H2O Wave is a software stack for building beautiful, low-latency, real-time, browser-based applications and dashboards entirely in Python without using HTML, Javascript, or CSS
 
 #### Locust
 <img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/locust.jpeg" width="300">
 Locust is an open source, easy to use, scriptable and scalable performance testing tool.
 
-### Quick start
+### Quickstart
 #### Pre requesists : 
 - You need to have Python 3.6+ in your Linux, macOS, and Windows in order to install H2O wave.
 - Need git installed.
@@ -18,7 +18,7 @@ Locust is an open source, easy to use, scriptable and scalable performance testi
 1. Download and extract the H2O Wave SDK for your platform using -
 https://github.com/h2oai/wave/releases/tag/v0.19.0 
 2. Move it to a convenient location. ($HOME/wave/)
-3. Go to your Wave directory and start the wave server using,
+3. Go to your Wave directory and open a new terminal. Start the wave server using,
   ```
 ./waved
 ```
@@ -57,12 +57,12 @@ wave run src/test_app.py
 <img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/home.png" width="600">
 
 #### Then you will get the below page asking inputs.
-1. Number of users : number of uses you need Locust to simulate
-2. Spawn rate :  speed at which users are created in the beginning until the specified number of concurrent users are created
-3. Host : host to load test(it will be filled as 'https://www.bbc.com' for you)
+1. Number of users: number of users you need Locust to simulate
+2. Spawn rate:  speed at which users are created in the beginning until the specified number of concurrent users are created
+3. Host: host to load test(it will be filled as 'https://www.bbc.com' for you)
 <img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/start%20new%20load%20test.png" width="600">
 
-#### Then you proceed to the Locust dashboard. It has following tabs.
+#### Then you proceed to the Locust dashboard. It has the following tabs.
 1. Statistics
 - This shows real-time statistics on how the server responds to the requests sent by Locust. For this 3 endpoints have been used and defined in the src/locust.py.
 <img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/statistics.png" width="600">
@@ -73,7 +73,7 @@ wave run src/test_app.py
 
 <img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/charts_2.png" width="600">
 
-3. Failiures
+3. Failures
 - If any request got failed due to a connection error, timeout, page not found, bad request or similar reason, it will be displayed in this tab.
 <img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/failiures.png" width="600">
 
@@ -86,5 +86,5 @@ wave run src/test_app.py
 <img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/tasks.png" width="600">
 
 5. Download Data
-- After finishing the test, we can download the data of statistics, failires and exceptions as csv files. And a report which displayed in the web interface.
+- After finishing the test, we can download the data of statistics, failures and exceptions as CSV files and a report displayed in the web interface.
 <img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/downloads.png" width="600">
