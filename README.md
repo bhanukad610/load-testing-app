@@ -57,7 +57,7 @@ wave run src/test_app.py
 <img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/home.png" width="600">
 
 #### Then you will get the below page asking inputs.
-1. Number of users: number of users you need Locust to simulate
+1. Number of users: number of users you need to simulate
 2. Spawn rate:  speed at which users are created in the beginning until the specified number of concurrent users are created
 3. Host: host to load test(it will be filled as 'https://www.bbc.com' for you)
 <img src="https://github.com/bhanukad610/load-testing-app/blob/main/images/start%20new%20load%20test.png" width="600">
