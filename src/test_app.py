@@ -1,6 +1,6 @@
 from h2o_wave import main, app, Q, ui
 
-# Locust
+# Locust configs
 locustHost = 'localhost'
 locustPort = '8089'
 
@@ -18,7 +18,7 @@ def home(q: Q):
         ui.text_xl(content='Load Testing Application for www.bbc.com'),
         ui.text_l(content='with H2O Wave and locust'),
         ui.image(
-            title='loctus logo',
+            title='h2o logo',
             path='https://www.h2o.ai/wp-content/uploads/2020/12/wave-type-yellow-1024x410.png',
             width='400px'
         ),
